@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c2160985-9a91-44e7-85c9-fca7a0948c30" name="SDHserverPi" url="http://172.16.191.140">
+        <fileTransfer host="172.16.191.140" port="22" accessType="SFTP" password="dfdddfc2dfcbdfdedfdedfc2dfcfdfccdfdfdfc9dfc1df9bdf9edfd3" username="pi">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
