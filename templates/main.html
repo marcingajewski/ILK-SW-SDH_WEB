@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Dog</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename="main.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename="jquery-ui.structure.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename="jquery-ui.theme.css")}}">
+</head>
+
+
+<body>
+<h1>Give your best friend the most he deserves!!!</h1>
+<p id="marcin">by Marcin Gajewski</p>
+
+
+<table id="table_out_panel">
+    <th>Out sensors</th>
+    <tr>
+        <td><img class="panel_icons" id="table_out_panel_img_light" src="{{ url_for('static', filename="LightSensorSymbol.png")}}"/></td>
+    </tr>
+    <tr><td class="panel_value" id="table_out_panel_value_light">400 lx</td></tr>
+</table>
+<table id="table_dog">
+    <tr>
+        <td><img id="housedog_picture" src="{{ url_for('static', filename="doghouse1.png")}}"/></td>
+        <td><img id="dog_picture" src="{{ url_for('static', filename="dog1NoBackground.png")}}"/></td>
+    </tr>
+
+</table>
+
+<div id="dog_message">Original message</div>
+
+    <script src="{{ url_for('static', filename="jquery.js")}}"></script>
+    <script src="{{ url_for('static', filename="jquery-ui.js")}}"></script>
+    <script src="{{ url_for('static', filename="init.js")}}"></script>
+</body>
+</html>

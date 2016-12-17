@@ -1,0 +1,52 @@
+body{
+    background-color: #1effa3;
+}
+
+h1 {
+    text-align: center;
+}
+
+.panel_icons{
+    height: 100px;
+    width: 100px;
+}
+
+.panel_value{
+    text-align: center;
+    position: relative;
+    top: -65px;
+}
+
+#housedog_picture{
+    height: 400px;
+    width: 423px;
+}
+
+#dog_picture{
+    position:relative;
+    height: 300px;
+    left: -50px;
+    top: 50px;
+}
+
+#dog_message{
+    display: none;
+    position: absolute;
+    width: 100px;
+    top: 0px;
+    left:0px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #404040;
+    border: 1px solid #999;
+    padding: 7px;
+}
+
+#custom-handle {
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+}
