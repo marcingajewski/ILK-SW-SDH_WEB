@@ -11,47 +11,62 @@ var counter = -40
 document.addEventListener("DOMContentLoaded", function(event) {
     var gg1_light = new JustGage({
       id: "gg1_light",
-      value : 325,
+      value : 50000,
       min: 0,
-      max: 1000,
-      decimals: 1,
+      max: 150000,
+      decimals: 0,
+      symbol: " lx",
       gaugeWidthScale: 0.6,
-      refreshAnimationType: "bounce",
+      refreshAnimationType: "linear",
       title: "Ambient Light",
       label: "lx",
+      shadowOpacity: 1,
+      shadowSize: 5,
+      shadowVerticalOffset: 10,
+      pointer: true,
+        pointerOptions: {
+          toplength: -15,
+          bottomlength: 10,
+          bottomwidth: 12,
+          color: '#8e8e93',
+          stroke: '#ffffff',
+          stroke_width: 3,
+          stroke_linecap: 'round'
+        },
+
       customSectors: [{
-        color : "#001166",
-        lo : -40,
-        hi : -30
+        color : "##ffee46",
+        lo : 0.0001,
+        hi : 0.0108
       },{
-        color : "#0012F8",
-        lo : -30,
-        hi : -10
+        color : "#414c41",
+        lo : 0.0109,
+        hi : 1.08
       },
         {
-        color : "#46C9E5",
-        lo : -10,
-        hi : 0
+        color : "#6c7041",
+        lo : 1.09,
+        hi : 10.75
       },
       {
-        color : "#67E5A2",
-        lo : 0,
-        hi : 10
+        color : "#aea943",
+        lo : 10.76,
+        hi : 107.53
       },
       {
-        color : "#63E525",
-        lo : 10,
-        hi : 20
+        color : "#d4c943",
+        lo : 107.54,
+        hi : 1075.3
       },
         {
-        color : "#DA881B",
-        lo : 20,
-        hi : 30
+        color : "#f8e944",
+        lo : 1075.4,
+        hi : 10752.7
       },
       {
-        color : "#DA652F",
-        lo : 30,
-        hi : 60
+        color : "#ffee45",
+        lo : 10752.8,
+        hi : 150000
       }],
       counter: true
     });
