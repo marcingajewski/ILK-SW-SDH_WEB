@@ -11,28 +11,70 @@
 
 <body>
 <h1>Give your best friend the most he deserves!!!</h1>
-<p id="marcin">by Marcin Gajewski</p>
-
-
 <table id="table_out_panel">
     <th>Out sensors</th>
     <tr>
         <td><img class="panel_icons" id="table_out_panel_img_light" src="{{ url_for('static', filename="LightSensorSymbol.png")}}"/></td>
+        <td rowspan="10"><img id="housedog_picture" src="{{ url_for('static', filename="doghouse1.png")}}"/></td>
+        <td rowspan="10"><img id="dog_picture" src="{{ url_for('static', filename="dog1NoBackground.png")}}"/></td>
     </tr>
-    <tr><td class="panel_value" id="table_out_panel_value_light">400 lx</td></tr>
-</table>
-<table id="table_dog">
     <tr>
-        <td><img id="housedog_picture" src="{{ url_for('static', filename="doghouse1.png")}}"/></td>
-        <td><img id="dog_picture" src="{{ url_for('static', filename="dog1NoBackground.png")}}"/></td>
+        <td class="panel_value" id="table_out_panel_value_light">400 lx</td>
     </tr>
-
+    <tr>
+        <td><img class="panel_icons" id="table_out_panel_img_pressure" src="{{ url_for('static', filename="pressure.png")}}"/></td>
+    </tr>
+    <tr>
+        <td class="panel_value" id="table_out_panel_value_pressure">1024 hPa</td>
+    </tr>
+    <tr>
+        <td><img class="panel_icons" id="table_out_panel_img_temperature" src="{{ url_for('static', filename="temperature.png")}}"/></td>
+    </tr>
+    <tr>
+        <td class="panel_value" id="table_out_panel_value_temperature">23 deg C</td>
+    </tr>
+    <tr>
+        <td><img class="panel_icons" id="table_out_panel_img_humidity" src="{{ url_for('static', filename="humidity.png")}}"/></td>
+    </tr>
+    <tr>
+        <td class="panel_value" id="table_out_panel_value_humidity">21%</td>
+    </tr>
+    <tr>
+        <td>
+            <div>
+                <img class="panel_icons" id="table_out_panel_img_amprevolt" src="{{ url_for('static', filename="CurrentSensor.png")}}"/>
+                <div class="panel_value" id="table_out_panel_value_ampre">0.45A</div>
+                <div class="panel_value" id="table_out_panel_value_volt">3.31V</div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="panel_value" id="table_out_panel_value_power">1.48W</td>
+    </tr>
+    <tr>
+        <td><img class="panel_icons" id="table_out_panel_img_gps" src="{{ url_for('static', filename="gps.png")}}"/></td>
+    </tr>
+    <tr>
+        <td class="panel_value" id="table_out_panel_value_humidity">UK,Nottingham</td>
+    </tr>
 </table>
+
+
+  <div class="container">
+    <div id="gg1" class="gauge"></div>
+    <p id="gg1_text">0-50 is green, 51-100 is red</p>
+    <a href="#" id="gg1_refresh" class="button grey">Random Refresh</a>
+    <a href="#" id="gg1_update" class="button grey">Update Sectors</a>
+  </div>
 
 <div id="dog_message">Original message</div>
 
     <script src="{{ url_for('static', filename="jquery.js")}}"></script>
     <script src="{{ url_for('static', filename="jquery-ui.js")}}"></script>
     <script src="{{ url_for('static', filename="init.js")}}"></script>
+    <script src="{{ url_for('static', filename="raphael-2.1.4.min.js")}}"></script>
+    <script src="{{ url_for('static', filename="justgage.js")}}"></script>
+    <script src="{{ url_for('static', filename="main.js")}}"></script>
+
 </body>
 </html>

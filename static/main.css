@@ -9,12 +9,25 @@ h1 {
 .panel_icons{
     height: 100px;
     width: 100px;
+    background-color: goldenrod;
 }
 
 .panel_value{
     text-align: center;
     position: relative;
-    top: -65px;
+    //top: -65px;
+}
+
+#table_out_panel_value_ampre{
+    position: absolute;
+    top: 665px;
+    left: 25px;
+}
+
+#table_out_panel_value_volt{
+    position: absolute;
+    top: 702px;
+    left: 60px;
 }
 
 #housedog_picture{
@@ -50,3 +63,22 @@ h1 {
     text-align: center;
     line-height: 1.6em;
 }
+
+  .container {
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .gauge {
+    width: 450px;
+    height: 450px;
+  }
+
+  a:link.button,
+  a:active.button,
+  a:visited.button,
+  a:hover.button {
+    margin: 30px 5px 0 2px;
+    padding: 7px 13px;
+  }
