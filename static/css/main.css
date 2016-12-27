@@ -64,29 +64,59 @@ h1 {
     line-height: 1.6em;
 }
 
-  .container {
-    width: 450px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
   .gauge {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 150px;
   }
 
-  a:link.button,
-  a:active.button,
-  a:visited.button,
-  a:hover.button {
-    margin: 30px 5px 0 2px;
-    padding: 7px 13px;
+  .gauge_mini{
+      width: 100px;
+      height: 75px;
   }
 
-  #gg1_light{
-        background-image: url("/static/pictures/sun.png");
+    .gauge_mini2{
+      width: 100px;
+      height: 150px;
+  }
+
+#gg1_light{
+    background-image: url("/static/pictures/sun.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 52%;
+    }
+
+#gg2_pressure{
+        background-image: url("/static/pictures/pressure.png");
         background-size: 50px;
         background-repeat: no-repeat;
         background-position-x: 50%;
-        background-position-y: 52%;
+        background-position-y: 57%;
         }
+
+#gg3_temperature{
+        background-image: url("/static/pictures/temperature.png");
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: 60%;
+        }
+
+#gg4_humidity{
+        background-image: url("/static/pictures/humidity.png");
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: 60%;
+        }
+
+#map {
+        width: 200px;
+        height: 150px;
+        //background-color: grey;
+      }
+
+.table_gauges{
+    border: solid 3px black;
+}

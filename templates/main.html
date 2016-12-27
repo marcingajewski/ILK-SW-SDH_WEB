@@ -19,55 +19,58 @@
         <td rowspan="10"><img id="dog_picture" src="{{ url_for('static', filename="pictures/dog1NoBackground.png")}}"/></td>
     </tr>
     <tr>
-        <td>
+        <td class="table_gauges">
         <div id="gg1_light" class="gauge"></div>
         </td>
     </tr>
+
     <tr>
-        <td><img class="panel_icons" id="table_out_panel_img_pressure" src="{{ url_for('static', filename="pictures/pressure.png")}}"/></td>
-    </tr>
-    <tr>
-        <td class="panel_value" id="table_out_panel_value_pressure">1024 hPa</td>
-    </tr>
-    <tr>
-        <td><img class="panel_icons" id="table_out_panel_img_temperature" src="{{ url_for('static', filename="pictures/temperature.png")}}"/></td>
-    </tr>
-    <tr>
-        <td class="panel_value" id="table_out_panel_value_temperature">23 deg C</td>
-    </tr>
-    <tr>
-        <td><img class="panel_icons" id="table_out_panel_img_humidity" src="{{ url_for('static', filename="pictures/humidity.png")}}"/></td>
-    </tr>
-    <tr>
-        <td class="panel_value" id="table_out_panel_value_humidity">21%</td>
-    </tr>
-    <tr>
-        <td>
-            <div>
-                <img class="panel_icons" id="table_out_panel_img_amprevolt" src="{{ url_for('static', filename="pictures/CurrentSensor.png")}}"/>
-                <div class="panel_value" id="table_out_panel_value_ampre">0.45A</div>
-                <div class="panel_value" id="table_out_panel_value_volt">3.31V</div>
-            </div>
+        <td class="table_gauges">
+        <div id="gg2_pressure" class="gauge"></div>
         </td>
     </tr>
+
     <tr>
-        <td class="panel_value" id="table_out_panel_value_power">1.48W</td>
+        <td class="table_gauges">
+        <div id="gg3_temperature" class="gauge"></div>
+        </td>
     </tr>
+
     <tr>
-        <td><img class="panel_icons" id="table_out_panel_img_gps" src="{{ url_for('static', filename="pictures/gps.png")}}"/></td>
+        <td class="table_gauges">
+        <div id="gg4_humidity" class="gauge"></div>
+        </td>
     </tr>
+
     <tr>
-        <td class="panel_value" id="table_out_panel_value_humidity">UK,Nottingham</td>
+        <td>
+            <table class="table_gauges">
+                <tr>
+                    <td><div id="gg5_voltage" class="gauge_mini"></div></td>
+                    <td rowspan="2"><div id="gg7_power" class="gauge_mini2"></td>
+                </tr>
+                <tr>
+                    <td><div id="gg6_current" class="gauge_mini"></div></td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="table_gauges">
+        <div id="gg8_led1" class="gauge"></div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="table_gauges">
+            <div id="map"></div>
+        </td>
     </tr>
 </table>
 
 
-  <div class="container">
-    <div id="gg1" class="gauge"></div>
-    <p id="gg1_text">0-50 is green, 51-100 is red</p>
-    <a href="#" id="gg1_refresh" class="button grey">Random Refresh</a>
-    <a href="#" id="gg1_update" class="button grey">Update Sectors</a>
-  </div>
 
 <div id="dog_message">Original message</div>
 
@@ -77,6 +80,11 @@
     <script src="{{ url_for('static', filename="js/plugin/justgage.js")}}"></script>
     <script src="{{ url_for('static', filename="js/main.js")}}"></script>
     <script src="{{ url_for('static', filename="js/gauges.js")}}"></script>
+    <script src="{{ url_for('static', filename="js/map.js")}}"></script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj7GhzM1_AaYVwE2ehvpFIlVcU4djuQ8M&callback=initMap">
+    </script>
 
 
 </body>
