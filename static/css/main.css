@@ -120,3 +120,19 @@ h1 {
 .table_gauges{
     border: solid 3px black;
 }
+
+.verticalTableHeader {
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform: rotate(-90deg);
+    white-space: pre;
+    width: 70px;
+    font-size: 80px;
+    font-family: fantasy;
+    font-stretch: extra-expanded;
+    font-style: italic;
+    font-weight: lighter;
+}
+
