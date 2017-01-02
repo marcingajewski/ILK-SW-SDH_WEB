@@ -6,69 +6,148 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename="css/main.css")}}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename="css/plugin/jquery-ui.structure.css")}}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename="css/plugin/jquery-ui.theme.css")}}">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="{{ url_for('static', filename="css/plugin/menu-style.css")}}">
+
 </head>
 
 
 <body>
+  <header>
+<nav id="nav" class="ry">
+  <ul id="main-menu">
+    <li>
+      <a href="#"><i class="fa fa-home"></i> Home</a>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-user"></i> About <i class="fa fa-caret-down"></i></a>
+        <ul class="submenu">
+        <li><a href="#0">Meet the Team</a></li>
+        <li><a href="#0">Careers</a></li>
+        <li>
+          <a href="#0">More Items <i class="fa fa-caret-right"></i></a>
+           <ul class="submenu">
+            <li><a href="#0">A Sub-Item</a></li>
+            <li>
+              <a href="#0">A Sub-Item</a>
+             </li>
+            <li>
+              <a href="#0">A Sub-Item</a>
+             </li>
+          </ul>
+         </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-briefcase"></i> Clients <i class="fa fa-caret-down"></i></a>
+       <ul class="submenu">
+        <li><a href="#0">Lorem</a></li>
+        <li><a href="#0">Aliquam</a></li>
+        <li><a href="#0">Vestibulum</a></li>
+        <li><a href="#0">Ipsum</a></li>
+        <li><a href="#0">Consectetur</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-comment"></i> Contact Us</a>
+    </li>
+  </ul>
+</nav>
+</header>
+  <main>
 <h1>Give your best friend the most he deserves!!!</h1>
 <table id="table_out_panel">
     <tr>
-        <td rowspan="10"><div class="verticalTableHeader">O u t     S e n s o r s</div></td>
-    </tr>
-
-    <tr>
         <td></td>
-        <td rowspan="10"><img id="housedog_picture" src="{{ url_for('static', filename="pictures/doghouse1.png")}}"/></td>
-        <td rowspan="10"><img id="dog_picture" src="{{ url_for('static', filename="pictures/dog1NoBackground.png")}}"/></td>
-    </tr>
-    <tr>
         <td class="table_gauges">
         <div id="gg1_light" class="gauge"></div>
         </td>
+        <td rowspan="3"><img id="housedog_picture" src="{{ url_for('static', filename="pictures/doghouse1.png")}}"/></td>
+        <td rowspan="3"><img id="dog_picture" src="{{ url_for('static', filename="pictures/dog1NoBackground.png")}}"/></td>
+        <td class="table_gauges">
+        <div id="gg9_temperature" class="gauge"></div>
+
+        </td>
     </tr>
 
+
     <tr>
+        <td></td>
         <td class="table_gauges">
         <div id="gg2_pressure" class="gauge"></div>
         </td>
+
+        <td class="table_gauges">
+        <div id="gg10_humidity" class="gauge"></div>
+        </td>
     </tr>
 
     <tr>
+                <td rowspan="5"><div class="verticalTableHeader">O u t     S e n s o r s</div></td>
+
         <td class="table_gauges">
         <div id="gg3_temperature" class="gauge"></div>
         </td>
+         <td class="table_gauges">
+        <div id="gg11_food" class="gauge"></div>
+        </td>
+                <td rowspan="5"><div class="verticalTableHeader">   I n      S e n s o r s</div></td>
+
     </tr>
 
     <tr>
         <td class="table_gauges">
         <div id="gg4_humidity" class="gauge"></div>
         </td>
-    </tr>
-
-    <tr>
-        <td>
-            <table class="table_gauges">
+        <td colspan="2">
+            <table id="extra_sub_menu">
                 <tr>
-                    <td><div id="gg5_voltage" class="gauge_mini"></div></td>
-                    <td rowspan="2"><div id="gg7_power" class="gauge_mini2"></td>
-                </tr>
-                <tr>
-                    <td><div id="gg6_current" class="gauge_mini"></div></td>
-                </tr>
 
+                    <td><div id="gg7_power" class="gauge_mini"></td>
+                    <td><div id="gg8_led1" class="gauge_mini"></div></td>
+                    <td><div id="gg13_fan" class="gauge_mini"></div></td>
+                    <td><div id="gg14_heater" class="gauge_mini"></div></td>
+
+                </tr>
             </table>
         </td>
-    </tr>
-
-    <tr>
-        <td class="table_gauges">
-        <div id="gg8_led1" class="gauge"></div>
+         <td class="table_gauges">
+        <div id="gg12_water" class="gauge"></div>
         </td>
     </tr>
+
+{#    <tr>#}
+{#        <td>#}
+{#            <table class="table_gauges">#}
+{#                <tr>#}
+{#                    <td><div id="gg5_voltage" class="gauge_mini"></div></td>#}
+{#                    <td rowspan="2"><div id="gg7_power" class="gauge_mini2"></td>#}
+{#                </tr>#}
+{#                <tr>#}
+{#                    <td><div id="gg6_current" class="gauge_mini"></div></td>#}
+{#                </tr>#}
+{##}
+{#            </table>#}
+{#        </td>#}
+{#    </tr>#}
+
+{#    <tr>#}
+{#        <td class="table_gauges">#}
+{#        <div id="gg8_led1" class="gauge"></div>#}
+{#        </td>#}
+{#    </tr>#}
 
     <tr>
         <td class="table_gauges">
             <div id="map"></div>
+        </td>
+        <td colspan="2">
+
+        </td>
+
+        <td class="table_gauges">
+        <img id="camera_picture" src="{{ url_for('static', filename="pictures/camera_video.png")}}"/>
         </td>
     </tr>
 </table>
@@ -76,7 +155,10 @@
 
 
 <div id="dog_message">Original message</div>
+  </main>
+<footer>
 
+</footer>
     <script src="{{ url_for('static', filename="js/plugin/jquery.js")}}"></script>
     <script src="{{ url_for('static', filename="js/plugin/jquery-ui.js")}}"></script>
     <script src="{{ url_for('static', filename="js/plugin/raphael-2.1.4.min.js")}}"></script>
@@ -89,6 +171,7 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj7GhzM1_AaYVwE2ehvpFIlVcU4djuQ8M&callback=initMap">
     </script>
 
+    <script src="{{ url_for('static', filename="js/plugin/menu-index.js")}}"></script>
 
 </body>
 </html>

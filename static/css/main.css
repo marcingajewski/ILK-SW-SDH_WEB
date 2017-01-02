@@ -64,7 +64,8 @@ h1 {
     line-height: 1.6em;
 }
 
-  .gauge {
+  .gauge,
+  #camera_picture{
     width: 200px;
     height: 150px;
   }
@@ -95,7 +96,8 @@ h1 {
         background-position-y: 57%;
         }
 
-#gg3_temperature{
+#gg3_temperature,
+#gg9_temperature{
         background-image: url("/static/pictures/temperature.png");
         background-size: 50px;
         background-repeat: no-repeat;
@@ -103,7 +105,8 @@ h1 {
         background-position-y: 60%;
         }
 
-#gg4_humidity{
+#gg4_humidity,
+#gg10_humidity{
         background-image: url("/static/pictures/humidity.png");
         background-size: 50px;
         background-repeat: no-repeat;
@@ -118,7 +121,16 @@ h1 {
       }
 
 .table_gauges{
-    border: solid 3px black;
+    //border: solid 3px black;
+}
+
+table, th, td {
+    //border: 1px solid black;
+    border-collapse: collapse;
+}
+#extra_sub_menu{
+    position: relative;
+    left: 250px;
 }
 
 .verticalTableHeader {

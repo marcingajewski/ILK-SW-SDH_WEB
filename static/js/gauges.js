@@ -271,11 +271,124 @@ var gg8_led1 = new JustGage({
   value : 40,
   min: 0,
   max: 100,
+  donut: true,
   decimals: 0,
   symbol: " %",
   gaugeWidthScale: 0.6,
   refreshAnimationType: "linear",
   title: "PWM",
   label: "%",
+  counter: true
+});
+
+
+
+var gg9_temperature = new JustGage({
+  id: "gg9_temperature",
+  value : 32.1,
+  min: -40,
+  max: 60,
+  decimals: 1,
+  symbol: " ºC",
+  gaugeWidthScale: 0.6,
+  refreshAnimationType: "linear",
+  title: "Temperature",
+  label: "ºC",
+  counter: true
+});
+
+
+var gg10_humidity = new JustGage({
+  id: "gg10_humidity",
+  value : 40,
+  min: 0,
+  max: 100,
+  decimals: 0,
+  symbol: " %",
+  gaugeWidthScale: 0.6,
+  refreshAnimationType: "linear",
+  title: "Humidity",
+  label: "%",
+  pointer: true,
+  counter: true
+});
+
+
+
+var gg11_food = new JustGage({
+  id: "gg11_food",
+  value : 90,
+  min: 0,
+  max: 100,
+  decimals: 0,
+  symbol: " %",
+  gaugeWidthScale: 0.6,
+  refreshAnimationType: "linear",
+  title: "Food supply",
+  label: "%",
+  pointer: true,
+  counter: true
+});
+
+
+var gg12_water = new JustGage({
+  id: "gg12_water",
+  value : 70,
+  min: 0,
+  max: 100,
+  decimals: 0,
+  symbol: " %",
+  gaugeWidthScale: 0.6,
+  refreshAnimationType: "linear",
+  title: "Water supply",
+  label: "%",
+  pointer: true,
+  counter: true
+});
+
+var gg13_fan = new JustGage({
+  id: "gg13_fan",
+  value : 15,
+  min: 0,
+  max: 100,
+  decimals: 1,
+  symbol: "%",
+  donut: true,
+  gaugeWidthScale: 0.6,
+  refreshAnimationType: "linear",
+  title: "Ventilation fan",
+  label: "%",
+
+  pointer: true,
+    pointerOptions: {
+          toplength: 5,
+          bottomlength: 5,
+          bottomwidth: 4,
+          color: '#000'
+        },
+  counter: true
+});
+
+var gg14_heater = new JustGage({
+  id: "gg14_heater",
+  value : 1500,
+  min: 0,
+  max: 2000,
+  decimals: 1,
+  symbol: "W",
+  donut: true,
+  gaugeWidthScale: 0.6,
+  refreshAnimationType: "linear",
+  title: "Heater",
+  label: "W",
+  valueFontSize: 1,
+
+  pointer: true,
+    pointerOptions: {
+          toplength: 5,
+          bottomlength: 5,
+          bottomwidth: 4,
+          color: '#000'
+        },
   counter: true
 });
