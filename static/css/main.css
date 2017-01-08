@@ -62,6 +62,7 @@ h1 {
     margin-top: -.8em;
     text-align: center;
     line-height: 1.6em;
+    font-size: 2em;
 }
 
   .gauge,
@@ -148,3 +149,29 @@ table, th, td {
     font-weight: lighter;
 }
 
+
+#custom-handle {
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+#slider_text{
+    text-align: center;
+    font-size: xx-large;
+    font-family: fantasy;
+}
+
+#slider{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    height: 2em;
+}
+
+#slider_field{
+        display: none;
+}

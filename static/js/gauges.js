@@ -374,14 +374,29 @@ var gg14_heater = new JustGage({
   value : 1500,
   min: 0,
   max: 2000,
-  decimals: 1,
+  decimals: 0,
   symbol: "W",
   donut: true,
-  gaugeWidthScale: 0.6,
+  gaugeWidthScale: 1,
   refreshAnimationType: "linear",
   title: "Heater",
   label: "W",
-  valueFontSize: 1,
+  titleFontColor: "red",
+  valueFontColor: "blue",
+  //gaugeColor: "green",
+  shadowOpacity: 0.5,
+  shadowSize: 10,
+  donutStartAngle: 180,
+  valueMinFontSize: 1,
+    valueFontSize: 1,
+  hideValue: false,  //here we switch on or off the value!
+  hideInnerShadow: true,
+  humanFriendly: false,
+  noGradient: false,
+  relativeGaugeSize: false,
+  counter: true,
+  
+
 
   pointer: true,
     pointerOptions: {
