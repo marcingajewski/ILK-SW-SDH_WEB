@@ -246,7 +246,7 @@ var gg7_power = new JustGage({
   id: "gg7_power",
   value : 0.5,
   min: 0,
-  max: 10,
+  max: 3,
   decimals: 1,
   symbol: "W",
   donut: true,
@@ -276,7 +276,7 @@ var gg8_led1 = new JustGage({
   symbol: " %",
   gaugeWidthScale: 0.6,
   refreshAnimationType: "linear",
-  title: "PWM",
+  title: "LED",
   label: "%",
   counter: true
 });
