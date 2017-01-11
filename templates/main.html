@@ -84,7 +84,7 @@
     </tr>
 
     <tr>
-                <td rowspan="5"><div class="verticalTableHeader">O u t     S e n s o r s</div></td>
+        <td rowspan="5"><div class="verticalTableHeader">O u t     S e n s o r s</div></td>
 
         <td class="table_gauges">
         <div id="gg3_temperature" class="gauge"></div>
@@ -151,7 +151,8 @@
         </td>
 
         <td class="table_gauges">
-        <img id="camera_picture" src="{{ url_for('static', filename="pictures/camera_video.png")}}"/>
+        <a id="camera_link" href="#">
+            <img id="camera_picture" src="{{ url_for('static', filename="pictures/camera_video.png")}}"/></a>
         </td>
     </tr>
 </table>

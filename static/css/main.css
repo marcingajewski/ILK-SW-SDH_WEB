@@ -141,7 +141,7 @@ table, th, td {
     -ms-transform:rotate(-90deg);
     transform: rotate(-90deg);
     white-space: pre;
-    width: 70px;
+    width: 5vw;
     font-size: 80px;
     font-family: fantasy;
     font-stretch: extra-expanded;

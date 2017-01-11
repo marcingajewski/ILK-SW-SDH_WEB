@@ -407,3 +407,60 @@ var gg14_heater = new JustGage({
         },
   counter: true
 });
+
+
+
+$("#gg7_power").click(function () {
+    $("#slider_text").text("System Power capacity");
+
+    if(selection_miniguages ==0)
+    {
+        $("#slider_field").fadeToggle("slow");
+    }
+    selection_miniguages = 0;
+});
+
+$("#gg8_led1").click(function () {
+    if(led_user_control == true)
+    {
+        $("#slider_text").text("Set the LED power level");
+    }
+    else {
+        $("#slider_text").text("LED control not allowed by user. Please check settings!");
+    }
+    if(selection_miniguages ==1)
+        {
+            $("#slider_field").fadeToggle("slow");
+        }
+        selection_miniguages = 1;});
+
+$("#gg13_fan").click(function () {
+    if(ventilation_user_control == true)
+    {
+        $("#slider_text").text("Ventilation Fan power level");
+    }
+    else {
+        $("#slider_text").text("Ventilation control not allowed by user. Please check settings!");
+    }
+    if(selection_miniguages ==2)
+    {
+        $("#slider_field").fadeToggle("slow");
+    }
+    selection_miniguages = 2;
+});
+
+$("#gg14_heater").click(function () {
+    if(heater_user_control == true)
+    {
+        $("#slider_text").text("Heater power control 0W - 1000W");
+    }
+    else {
+        $("#slider_text").text("Heater control not allowed by user. Please check settings!");
+    }
+
+   if(selection_miniguages ==3)
+    {
+        $("#slider_field").fadeToggle("slow");
+    }
+    selection_miniguages = 3;
+});
