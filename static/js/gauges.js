@@ -246,7 +246,7 @@ var gg7_power = new JustGage({
   id: "gg7_power",
   value : 0.5,
   min: 0,
-  max: 3,
+  max: 10,
   decimals: 1,
   symbol: "W",
   donut: true,
