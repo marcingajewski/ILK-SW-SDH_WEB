@@ -15,7 +15,7 @@ def retrieveData():
     cursor = conn.execute("SELECT " +
                           "light1_lx, pres1_hPA, pres2_hPa, temp1_C, temp2_C, temp3_C, hum1_per, hum2_per, " +
                           "food, water, pir1, pir2, vol24V, cur24V_mA, pwr24V_W, pwrLED1, pwrFan1,pwrHeater1" +
-                          " FROM table1second ORDER BY nb DESC LIMIT 1;")
+                          " FROM sensors_1sec ORDER BY nb DESC LIMIT 1;")
     for row in cursor:
         conn.close()
         return jsonify(light1_lx=row[0], pres1_hPA=row[1], pres2_hPa=row[2], temp1_C=row[3],
